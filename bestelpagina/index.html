@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title> CozyCraze Winkelwagen</title>
+</head>
+<body>
+
+    <header class="header-box">
+
+        <nav class="navbar">
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <a href="" class="logo-box">
+                <div id="logo">CozyCraze</div>
+            </a>
+
+            <ul class="nav-items">
+                <li><a href="">Hoofdpagina</a></li>
+                <li class="nav-dropdown">Meubels
+                    <ul class="nav-dropdown-items">
+                        <li>Populair</li>
+                        <li>Banken</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <a href="" class="winkelmand">
+                <img src="../media/winkelmand.png" id="winkelmand">
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="section-1">
+
+        <div class="sec-1-bovenkant">
+
+            <div class="section-1-boven">
+
+                <div class="sec1-h2">
+                    <h2 id="sec1-h2">Winkelwagen</h2>
+                </div>
+
+                <div class="sec-1-links-h">
+                    <p>Product</p>
+                    <p>Subtotaal</p>
+                </div>
+
+            </div>
+
+            <div class="sec-1-links-product">
+                <img src="" id="gekozen-product">
+                <p id="gekozen-naam">De gekozen naam</p>
+                <p id="gekozen-prijs">De prijs van de product</p>
+            </div>
+
+            <div class="sec-1-links-knop">
+                <div><a href="../hoofdpagina/index.html">Verder Winkelen</a></div>
+            </div>
+
+        </div>
+
+        <div class="sec-1-onderkant">
+
+            <form action="bedankt.html" method="post">
+
+            <label for="naam">Naam:</label><br>
+            <input type="text" id="naam" name="naam" required pattern="[A-Za-z\s]{2,}" title="Voer een geldige naam in (alleen letters)"><br><br>
+
+            <label for="email">E-mailadres:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="product">Productnaam:</label><br>
+            <input type="text" id="product" name="product" required readonly value="Bankstel Deluxe"><br><br>
+
+            <label for="adres">Adres:</label><br>
+            <textarea id="adres" name="adres" required minlength="10" placeholder="Straatnaam 12, 1234 AB Plaats"></textarea><br><br>
+
+            <input type="submit" value="Bestelling afronden">
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
