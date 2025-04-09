@@ -1,0 +1,140 @@
+/* font familys
+font-family: "Lilita One", sans-serif;
+font-family: "Playfair Display", serif;
+font-family: "Roboto", sans-serif;
+*/
+
+html, body {
+    margin: 0;
+    min-height: 200vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header-box {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar {
+    background-color: #F5F5DC;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    position: absolute;
+    left: 0;
+    margin-left: 80px;
+}
+.nav-items a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.nav-items li {
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+.nav-dropdown {
+    cursor: pointer;
+}
+.nav-dropdown-items {
+    display: none;
+    position: absolute;
+    background-color: #F5F5DC;
+}
+.nav-dropdown-items li {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    width: 150px;
+    height: 75px;
+}
+.nav-dropdown:hover .nav-dropdown-items {
+    display: block;
+}
+.logo-box {
+    text-decoration: none;
+}
+#logo {
+    font-family: "Lilita One", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+}
+.winkelmand {
+    position: absolute;
+    right: 0;
+    margin-right: 80px;
+    cursor: pointer;
+}
+#winkelmand {
+    width: 80px;
+}
+.hero-banner {
+    display: flex;
+    justify-content: center;
+}
+#banner {
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.sec1-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+#underline-sec1-h2 {
+    width: 27%;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin-bottom: 100px;
+}
+.sec1-fotos img {
+    width: 400px;
+}
+.sec1-rij-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 100px;
+}
+.sec1-rij-1-fotos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.sec1-rij-1-text {
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
